@@ -1,0 +1,59 @@
+main {
+  padding-top: 184px;
+}
+
+.section {
+  margin: 0 auto 80px;
+}
+
+.section__title {
+  font-size     : 50px;
+  text-align    : center;
+  text-transform: uppercase;
+  margin        : 30px 0 20px 0;
+}
+
+.divider {
+  width        : 70px;
+  height       : 3px;
+  margin       : 0 auto 30px;
+  background   : #2d2d31;
+  border-radius: 2px;
+}
+
+.about-us {
+  max-width: 700px;
+}
+
+.about-us .section__description {
+  font-size : 24px;
+  text-align: center;
+}
+
+.services .services__list {
+  font-family    : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-evenly;
+  align-items    : center;
+  padding        : 10px 5px;
+  border-radius  : 5px;
+  border         : 1px solid #111;
+  background     : #1e1e20;
+}
+
+.services .services__list .services__item {
+  font-size           : 20px;
+  padding             : 17px 5px;
+  margin              : 7px;
+  font-weight         : 500;
+  flex-basis          : 45%;
+  text-align          : center;
+  letter-spacing      : .3px;
+  background          : #2d2d31;
+  border-radius       : 5px;
+}
+
+.services .services__list .services__item:last-child {
+  margin-top: 20px;
+}

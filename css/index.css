@@ -2,6 +2,7 @@
 );
 
 @import "header.css";
+@import "main.css";
 
 body {
   background : #151518;
