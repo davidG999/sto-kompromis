@@ -1,0 +1,178 @@
+.main {
+  .section {
+    &__title {
+      background    : $main-dark-lighter;
+      font-size     : 50px;
+      text-align    : center;
+      text-transform: uppercase;
+      margin        : 60px 0 20px 0;
+      padding       : 5px;
+    }
+
+    &__divider {
+      width        : 70px;
+      height       : 3px;
+      margin       : 0 auto 25px;
+      background   : $red;
+      border-radius: 3px;
+    }
+
+    &__description {
+      margin : 0 auto;
+      padding: 0 150px;
+    }
+  }
+
+  /* ABOUT US */
+
+  .about-us {
+    .section__description {
+      max-width : 700px;
+      margin    : 0 auto 80px;
+      text-align: center;
+      font-size : 24px;
+      text-align: center;
+    }
+  }
+
+  /* SERVICES */
+
+  .services__list {
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    align-items    : center;
+    padding        : 10px 10px 10px 50px;
+    border-radius  : 5px;
+    background     : $main-dark-lighter;
+    box-shadow     : 0 0 2px #c22427;
+    box-shadow     : 0 0 20px #151515;
+  }
+
+  .services__item {
+    font-size     : 20px;
+    padding       : 5px;
+    margin        : 5px 15px;
+    font-weight   : 500;
+    width         : 45%;
+    flex-wrap     : wrap;
+    letter-spacing: .3px;
+    border-radius : 5px;
+    position      : relative;
+
+    &:last-child {
+      // text-align: center;
+
+      // &::before {
+      //   left: 40px;
+      // }
+    }
+
+    &::before {
+      content : url('../assets/services/repair.svg');
+      padding : 5px;
+      top     : 1px;
+      left    : -30px;
+      position: absolute;
+      filter  : $filtered-red;
+    }
+  }
+
+  /* LOCATION */
+
+  iframe {
+    width : 100%;
+    height: 600px;
+  }
+
+  /* REVIEWS */
+
+  .reviews {
+    .reviews-list {
+      display: flex;
+
+      .review {
+        display       : flex;
+        flex-direction: column;
+        flex-basis    : 33.33%;
+        align-items   : center;
+        padding       : 15px 25px 32px;
+        letter-spacing: .3px;
+        line-height   : 20px;
+        box-shadow    : 0 0 20px #151515;
+        background    : $main-dark-lighter;
+        border-radius : 5px;
+        position      : relative;
+
+        &:not(:last-child) {
+          margin: 0 50px 0 0;
+        }
+
+        &__avatar {
+          margin       : 0 auto;
+          width        : 40px;
+          margin-bottom: 8px;
+        }
+
+        &__name {
+          margin       : 0 auto;
+          font-size    : 20px;
+          color        : $lightgray;
+          margin-bottom: 8px;
+          text-align   : center;
+        }
+
+        &__rating {
+          margin       : 0 auto;
+          width        : 80px;
+          margin-bottom: 10px;
+        }
+
+        &__description {
+          margin   : 0 auto;
+          font-size: 16px;
+        }
+
+        &__date {
+          font-size    : 14px;
+          text-align   : center;
+          margin-bottom: 8px;
+          position     : absolute;
+          bottom       : 0px;
+          color        : $gray;
+        }
+      }
+    }
+
+    &__button {
+      width : 280px;
+      margin: 50px auto;
+
+      >a {
+        background    : $main-dark-lighter;
+        display       : inline-block;
+        text-align    : center;
+        font-size     : 14px;
+        font-weight   : 500;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        padding       : 13px 0;
+        width         : 100%;
+        border-radius : 3px;
+        box-shadow    : 0 0 5px $red;
+        border        : 1px solid $red;
+        transition    : background .2s, box-shadow .2s;
+
+        &:hover {
+          background: $red;
+          box-shadow: 0 0 10px $red;
+        }
+      }
+
+      &:active {
+        transform: scale(.97);
+      }
+    }
+  }
+}

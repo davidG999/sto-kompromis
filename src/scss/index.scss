@@ -1,0 +1,21 @@
+@import "https://fonts.googleapis.com/css?family=Rubik:regular,500,700,800,900&display=swap";
+@import "variables.scss";
+@import "header.scss";
+@import "main.scss";
+@import "media.scss";
+
+body {
+  color      : $white;
+  font-family: "Rubik", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background : linear-gradient(to bottom, #232323 10%, #333 100%);
+  background : $main-dark;
+}
+
+.wrapper {
+  max-width: 1450px;
+  margin   : 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
