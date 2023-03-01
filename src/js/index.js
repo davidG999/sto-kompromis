@@ -1,11 +1,20 @@
-const copyImg = document.querySelector('.js-copy-img')
+const copyIcon = document.querySelector('[data-copy-icon]')
+const checkIcon = document.querySelector('[data-check-icon]')
 
-copyImg.addEventListener('click', e => {
-  navigator.clipboard.writeText('+380931892667')
-})
-
-copyImg.addEventListener('keypress', e => {
+copyIcon.addEventListener('click', handleCopyNumberClick);
+copyIcon.addEventListener('keypress', e => {
   if (e.key === 'Enter') {
-    navigator.clipboard.writeText('+380931892667')
+    handleCopyNumberClick()
   }
 })
+
+function handleCopyNumberClick() {
+  navigator.clipboard.writeText('+380931892667')
+  copyIcon.style.display = 'none'
+  checkIcon.style.display = 'block'
+
+  setTimeout(() => {
+    copyIcon.style.display = 'block'
+    checkIcon.style.display = 'none'
+  }, 2000);
+}

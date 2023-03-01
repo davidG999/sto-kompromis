@@ -43,8 +43,8 @@ a {
   .top-bar {
     font-size      : 13px;
     display        : flex;
-    justify-content: space-evenly;
-    padding        : 8px 50px 0;
+    justify-content: space-between;
+    padding        : 10px 10px 0;
 
     &__item {
       padding: 10px;
@@ -109,7 +109,7 @@ a {
       }
 
       &__days {
-        font-weight     : 500;
+        font-weight  : 500;
         margin-bottom: 6px;
       }
     }
@@ -136,16 +136,20 @@ a {
 
       .lifecell-img {
         top     : -1px;
-        left    : -30px;
+        left    : -28px;
         position: absolute;
       }
 
-      .copy-img {
-        top       : 2px;
+      .copy-icon,
+      .check-icon {
+        top       : 1px;
         right     : -25px;
         position  : absolute;
-        cursor    : pointer;
         text-align: center;
+      }
+
+      .copy-icon {
+        cursor: pointer;
 
         &:hover {
           opacity: .7;
@@ -154,6 +158,10 @@ a {
         &:active {
           opacity: .6;
         }
+      }
+
+      .check-icon {
+        display: none;
       }
     }
 

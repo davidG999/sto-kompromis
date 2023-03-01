@@ -1,0 +1,62 @@
+@media (max-width: 1199px) {
+  /* HEADER */
+
+  .top-bar__item-divider:nth-child(3) {
+    display: none;
+  }
+
+  .top-bar__working-hours.working-hours.top-bar__item {
+    display: none;
+  }
+
+
+  #reviews>div.section__description.reviews__reviews-list.reviews-list.wrapper>.review {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 870px) {
+  /* HEADER */
+
+  .top-bar__item-divider:nth-child(5) {
+    display: none;
+  }
+
+  .top-bar__address {
+    display: none;
+  }
+}
+
+@media (max-width: 555px) {
+  /* HEADER */
+
+  .header {
+    .top-bar__phone-number {
+      text-align: right;
+
+      .lifecell-img {
+        left: -10px;
+      }
+
+      .copy-icon {
+        display: none;
+      }
+    }
+
+    .top-bar__item-description>span {
+      display: none;
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  /* HEADER */
+
+  .top-bar__phone-number {
+    display: none;
+  }
+}
