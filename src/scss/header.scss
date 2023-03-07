@@ -4,13 +4,13 @@ a {
 }
 
 .header {
-  width  : 100%;
-  z-index: 10;
+  width     : 100%;
+  z-index   : 10;
+  background: $main-dark-lighter;
 
   &__nav {
-    width     : 100%;
-    background: $main-dark-lighter;
-    box-shadow: 0 0 5px #151515;
+    box-shadow: 0 0 5px $black;
+    position  : relative;
   }
 
   &__list {
@@ -20,6 +20,10 @@ a {
     .list__item {
       text-align: center;
       flex-grow : 1;
+
+      &:nth-child(3) {
+        display: none;
+      }
     }
 
     .list__link {
@@ -44,7 +48,7 @@ a {
     font-size      : 13px;
     display        : flex;
     justify-content: space-between;
-    padding        : 10px 10px 0;
+    padding        : 10px 10px 2px;
 
     &__item {
       padding: 10px;
@@ -82,15 +86,14 @@ a {
 
     &__logo {
       padding: 0;
+      margin : 2px 0 0 15px;
     }
 
     &__address {
       position: relative;
 
       a {
-        &:hover {
-          text-decoration: underline;
-        }
+        @include link-styles;
       }
 
       .top-bar__item-description {
@@ -127,11 +130,7 @@ a {
       }
 
       a {
-        font-weight: 500;
-
-        &:hover {
-          text-decoration: underline;
-        }
+        @include link-styles;
       }
 
       .lifecell-img {

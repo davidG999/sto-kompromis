@@ -9,9 +9,42 @@
     display: none;
   }
 
+  .header__nav {
+    .list__item:nth-child(3) {
+      display: block;
+    }
+  }
 
-  #reviews>div.section__description.reviews__reviews-list.reviews-list.wrapper>.review {
-    margin: 20px 0;
+  /* MAIN */
+
+  .main {
+    .visit-us {
+      display: block;
+
+      &__wrapper {
+        display: flex;
+
+        >div {
+          flex-basis: 100%;
+        }
+      }
+
+      &__address {
+        display: none;
+      }
+    }
+
+    .reviews .reviews-list {
+      justify-content: center;
+
+      .review {
+        flex-basis: 100%;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -25,38 +58,252 @@
   .top-bar__address {
     display: none;
   }
+
+  /* MAIN */
+
+  .main {
+    .section__description {
+      padding: 0 35px;
+    }
+
+    .visit-us {
+
+      &__address {
+        display: flex;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  /* HEADER */
+
+  .header__nav {
+    display: none;
+  }
+
+  /* MAIN */
+
+  .main {
+    .section__description {
+      padding: 0 25px;
+    }
+
+    .services {
+      &__item>.services__text::before {
+        content: none;
+      }
+    }
+
+    iframe {
+      height: 500px;
+    }
+
+    .visit-us__item {
+      padding: 15px 0;
+    }
+
+    .reviews {
+      .reviews-list {
+        flex-direction: column;
+
+        .review {
+          &:last-child {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: 555px) {
   /* HEADER */
 
   .header {
-    .top-bar__phone-number {
-      text-align: right;
+    box-shadow: 0 0 12px $black;
+    position  : relative;
 
-      .lifecell-img {
-        left: -10px;
+    .top-bar {
+      padding: 10px 0 5px;
+
+      &__phone-number {
+        text-align: right;
+
+        .lifecell-img {
+          left: -10px;
+        }
+
+        .copy-icon {
+          display: none;
+        }
       }
 
-      .copy-icon {
+      &__item-description>span {
         display: none;
       }
     }
+  }
 
-    .top-bar__item-description>span {
-      display: none;
+  /* MAIN */
+
+  .main {
+    .section {
+      &__divider {
+        display: none;
+      }
+
+      &__title {
+        font-size: 38px;
+      }
+
+      &__description {
+        padding: 0 20px;
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      // &:nth-child(odd) {
+      //   background: $main-dark-lighter;
+      // }
+
+      // &:nth-child(even) {
+      //   background: $main-dark;
+      // }
     }
 
-    &__nav {
-      display: none;
+    .about-us {
+      .section__description {
+        font-size: 20px;
+      }
+    }
+
+    .location {
+      iframe {
+        height: 400px;
+      }
+
+      .section__description {
+        padding: 0;
+      }
+    }
+
+    .services {
+      &__item {
+        padding       : 12px 15px;
+        font-weight   : 400;
+        font-weight   : 500;
+        letter-spacing: .3px;
+        font-size     : 16px;
+      }
+    }
+
+    .visit-us {
+      &__block-title {
+        font-size: 25px;
+        padding  : 15px 5px;
+      }
+
+      &__address {
+        .visit-us__item {
+          justify-content: center;
+        }
+        
+        .visit-us__item-title {
+          display: none;
+        }
+      }
+    }
+
+    .reviews {
+      .reviews-list {
+        gap: 25px;
+
+        .review {
+          padding: 10px 20px 30px;
+
+          &__name {
+            font-size: 18px;
+          }
+
+          &__rating {
+            width: 70px;
+          }
+
+          &__content {
+            font-size: 16px;
+          }
+        }
+      }
+
+      &__button {
+        width: 230px;
+      }
     }
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 420px) {
   /* HEADER */
 
   .top-bar__phone-number {
     display: none;
+  }
+
+  /* MAIN CONTENT */
+
+  .main {
+    .about-us .about-us__description {
+      .about-us__text {
+        font-size: 18px;
+        padding  : 0 10px;
+        margin   : 0 0 20px 0;
+      }
+
+      .about-us__contacts {
+        display  : block;
+        font-size: 18px;
+      }
+
+      .about-us__divider {
+        display: block;
+      }
+    }
+
+    .visit-us__item-content--link {
+      font-size: 17px;
+    }
+
+    .reviews {
+      &__button {
+        width: 180px;
+
+        >a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 335px) {
+  .main {
+    .about-us .section__description {
+      .about-us__contacts div {
+        display : block;
+        position: relative;
+      }
+
+      .lifecell-img {
+        display    : none;
+        // top     : 1px;
+        // left    : -10px;
+        // position: absolute;
+      }
+    }
   }
 }
