@@ -117,6 +117,12 @@
     }
   }
 
+  /* FOOTER */
+
+  .footer {
+    box-shadow: 0 0 10px $black;
+    display: flex;
+  }
 }
 
 @media (max-width: 555px) {

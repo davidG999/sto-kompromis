@@ -1,0 +1,53 @@
+.footer {
+  display   : none;
+  background: $main-dark-lighter;
+  margin    : 0 auto;
+
+  &__wrapper {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    padding        : 20px 20px;
+  }
+
+  &-section {
+    padding: 0 20px;
+    margin : 20px 0;
+  }
+
+  &__heading {
+    font-size: 20px;
+    margin   : 0 0 25px 0;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    >span:last-child {
+      color: $white;
+    }
+  }
+
+  &__description {
+    display       : flex;
+    flex-direction: column;
+    flex-wrap     : wrap;
+  }
+
+  &__phone-number,
+  &__langs .footer__link {
+    border-bottom: 2px solid $lightgray;
+  }
+
+  &__phone-number,
+  &__link,
+  &__description {
+    color: $lightgray;
+  }
+
+  &__nav,
+  &__contacts,
+  &__working-hours {
+    justify-content: flex-start;
+  }
+}
