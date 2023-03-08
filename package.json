@@ -24,9 +24,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-watch": "^5.0.1",
-    "live-server": "^1.2.2"
-  },
-  "dependencies": {
+    "live-server": "^1.2.2",
     "sass": "^1.58.3"
   }
 }

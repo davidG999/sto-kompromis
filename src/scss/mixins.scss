@@ -1,0 +1,11 @@
+@mixin link-styles($hover: true) {
+  font-weight  : 500;
+  border-bottom: 2px solid $lightgray;
+  transition   : border-bottom .2s ease-in-out;
+
+  @if $hover {
+    &:hover {
+      border-bottom-color: $white;
+    }
+  }
+}
