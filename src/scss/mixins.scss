@@ -10,6 +10,17 @@
   }
 }
 
+@mixin link-styles-light-mode($hover: true) {
+  font-weight  : 500;
+  border-bottom: 2px solid $gray;
+  transition   : border-bottom .2s ease-in-out;
+
+  @if $hover {
+    &:hover {
+      border-bottom-color: $black-light-mode;
+    }
+  }
+}
 
 @mixin button-styles {
   width          : 280px;

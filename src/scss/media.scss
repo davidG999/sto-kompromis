@@ -9,12 +9,6 @@
     display: none;
   }
 
-  .header__nav {
-    .list__item:nth-child(3) {
-      display: block;
-    }
-  }
-
   /* MAIN */
 
   .main {
@@ -48,10 +42,10 @@
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 940px) {
   /* HEADER */
 
-  .top-bar__item-divider:nth-child(5) {
+  .top-bar__item-divider {
     display: none;
   }
 
@@ -61,6 +55,19 @@
 
   /* MAIN */
 
+  body.light-mode {
+    .main {
+      .route__address::after {
+        content: none;
+      }
+
+      .schedule {
+        &__wrapper {
+          border-bottom: 2px solid $lightgray;
+        }
+      }
+    }
+  }
 
   .main {
     .section {
@@ -90,8 +97,19 @@
 @media (max-width: 768px) {
   /* HEADER */
 
-  .header__nav {
-    display: none;
+  body.light-mode {
+    .header {
+      box-shadow: 0 0 10px #aaa;
+    }
+  }
+
+  .header {
+    position  : relative;
+    box-shadow: 0 0 10px $black;
+
+    &__nav {
+      display: none;
+    }
   }
 
   /* MAIN */
@@ -140,17 +158,15 @@
   }
 }
 
+@media (max-width: 615px) {
   .header {
-    box-shadow: 0 0 12px $black;
-    position  : relative;
-
     .top-bar {
       padding: 10px 0 5px;
 
       &__phone-number {
         text-align: right;
 
-        .lifecell-img {
+        .lifecell-logo {
           left: -10px;
         }
 

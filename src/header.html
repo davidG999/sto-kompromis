@@ -44,14 +44,28 @@
       </div>
     </div>
 
-    <div class="top-bar__langs top-bar__item">
-      <a href="/" class="top-bar__item-heading" title="Українська">Укр</a>
-      <div class="divider"></div>
-      <a href="../ru/" lang="ru" class="top-bar__item-heading non-active" title="Русский">Рус</a>
+    <div class="top-bar__item-divider"></div>
+    <div class="top-bar__preferences top-bar__item">
+      <ul class="top-bar__langs">
+        <li class="top-bar__lang-item">
+          <a href="/" class="top-bar__lang" title="Українська">Укр</a>
+        </li>
+        <li class="top-bar__lang-item">
+          <a href="../ru/" lang="ru" class="top-bar__lang top-bar__lang_non-active" title="Русский">Рус</a>
+        </li>
+      </ul>
+      <div class="top-bar__mode" data-mode-section>
+        <button class="top-bar__switch-mode-btn" data-light-mode-btn>
+          <img class="top-bar__mode-icon" src="assets/mode/light-mode.svg" data-light-mode-icon alt="Світлий режим">
+        </button>
+        <button class="top-bar__switch-mode-btn" data-dark-mode-btn>
+          <img class="top-bar__mode-icon" src="assets/mode/dark-mode.svg" data-dark-mode-icon alt="Темний режим">
+        </button>
+      </div>
     </div>
   </div>
 
-  <nav class="header__nav">
+  <nav class="header__nav nav">
     <ul class="header__list list container-lg">
       <li class="list__item">
         <a href="#about-us" class="list__link">Про нас</a>
@@ -60,10 +74,7 @@
         <a href="#services" class="list__link">Послуги</a>
       </li>
       <li class="list__item">
-        <a href="#visit-us" class="list__link">Завітайте</a>
-      </li>
-      <li class="list__item">
-        <a href="#location" class="list__link">Пошук на карті</a>
+        <a href="#route" class="list__link">Маршрут</a>
       </li>
       <li class="list__item">
         <a href="#reviews" class="list__link">Відгуки</a>
