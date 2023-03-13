@@ -1,5 +1,10 @@
-$main-dark        : #1c1f22;
-$main-dark-lighter: #202327;
+
+$main-white        : #d4d5d7;
+$main-white-darker : #cececf;
+
+$main-dark         : #1c1f22;
+$main-dark-lighter : #202327;
+
 $black            : #151515;
 $gray             : #595959;
 $lightgray        : #aaa;
@@ -11,3 +16,9 @@ $lightred         : #ff5252;
 $green            : #4fe77a;
 $filtered-orange  : brightness(0) saturate(100%) invert(28%) sepia(92%) saturate(2430%) hue-rotate(3deg) brightness(106%) contrast(103%);
 $filtered-red     : brightness(0) saturate(100%) invert(11%) sepia(94%) saturate(5821%) hue-rotate(354deg) brightness(90%) contrast(78%);
+$gray      : #595959;
+$lightgray : #aaa;
+
+$red      : #e42124;
+$dark-red : #c22427;
+$logo-red : #821f20;
