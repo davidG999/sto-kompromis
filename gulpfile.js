@@ -16,12 +16,15 @@ function clean() {
 function html() {
   return src([
     'src/**/*.html',
-    '!src/header.html', // ignore
-    '!src/main.html', // ignore
-    '!src/footer.html', // ignore
-    // '!src/ru/header.html', // ignore
-    // '!src/ru/main.html', // ignore
-    // '!src/ru/footer.html' // ignore
+    // Ignore uk html files
+    '!src/header.html',
+    '!src/main.html',
+    '!src/footer.html',
+
+    // Ignore ru html files
+    '!src/ru/header.html',
+    '!src/ru/main.html',
+    '!src/ru/footer.html',
   ])
     .pipe(fileinclude({
       prefix: '@@',

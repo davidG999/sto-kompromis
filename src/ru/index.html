@@ -5,170 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+   content="Приезжайте в СТО «Компромисс» в Черкассах и получите профессиональное обслуживание своего автомобиля от опытной команды механиков, использующих новые технологии.">
+
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="icon" href="../assets/kompromiss-logo.png">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon-32x32.ico">
+  <link rel="icon" type="image/png" href="../assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../assets/favicon/favicon-16x16.png" sizes="16x16">
 
   <title>СТО «Компромисс» | Станция в Черкассах</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__top-bar top-bar wrapper">
-      <div class="top-bar__logo">
-        <a href="../ru/"> <img src="../assets/kompromiss-logo.png" height="70" width="135" /> </a>
-      </div>
-      <div class="top-bar__address top-bar__item">
-        <h3 class="top-bar__item-heading">СТО «Компромисс»</h3>
-        <div class="top-bar__item-description">
-          <a
-           href="https://www.google.com/maps/place/%D0%A1%D0%A2%D0%9E+%22%D0%9A%D0%BE%D0%BC%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%81%22/@49.430312,32.031196,17z/data=!4m5!3m4!1s0x0:0x7b59b2488408b51!8m2!3d49.4303116!4d32.0311961?hl=en"
-           target="_blank">м. Черкаси, вул. Хоменка 19</a>
-        </div>
-      </div>
-      <div class="top-bar__working-hours working-hours top-bar__item">
-        <div class="working-hours__weekdays">
-          <div class="top-bar__item-heading working-hours__days">Пн-Пт:</div>
-          <div class="top-bar__item-description working-hours__time">9:00-18:00</div>
-        </div>
-        <div class="working-hours__weekends">
-          <div class="top-bar__item-heading working-hours__days">Сб:</div>
-          <div class="top-bar__item-description working-hours__time">10:00-17:00</div>
-          <!-- <span class="working-hours__days">Нд:</span>
-            <span class="working-hours__time">Вихідний</span> -->
-        </div>
-      </div>
-      <div class="top-bar__phone-numbers top-bar__item">
-        <h3 class="top-bar__item-heading">Безкоштовно</h3>
-        <div class="top-bar__item-description">
-          <img class="lifecell-img" src="../assets/lifecell-logo.png" width="20" title="Lifecell" alt="Lifecell">
-          <a href="tel:+380931892667">(093) 189-26-67</a><span> — Артур </span>
-          <img class="copy-img js-copy-img" src="../assets/copy.svg" width="17" title="Скопіювати номер" tabindex="0"
-           alt="copy">
-        </div>
-      </div>
-      <div class="top-bar__langs top-bar__item">
-        <a href="../" class="top-bar__item-heading non-active" title="Українська">Укр</a>
-        |
-        <a href="/" class="top-bar__item-heading" title="Русский">Рус</a>
-      </div>
-    </div>
+  @@include('./header.html')
+  @@include('./main.html')
+  @@include('./footer.html')
 
-    <nav class="header__nav">
-      <ul class="header__list list wrapper">
-        <li class="list__item">
-          <a href="#about-us" class="list__link">Про нас</a>
-        </li>
-        <li class="list__item">
-          <a href="#services" class="list__link">Послуги</a>
-        </li>
-        <li class="list__item">
-          <a href="#location" class="list__link">Пошук на карті</a>
-        </li>
-        <li class="list__item">
-          <a href="#reviews" class="list__link">Відгуки</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  </nav>
-
-  <main>
-    <div class="wrapper">
-      <section id="about-us" class="section">
-        <h2 class="section__title">Про нас</h2>
-        <div class="divider"></div>
-        <div class="section__description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, temporibus
-            cum enim ex soluta dolorum, quod explicabo totam placeat porro dolores maiores praesentium nobis voluptatem
-            id
-            ipsam! Blanditiis, voluptates ipsam optio laudantium necessitatibus iste, dicta, suscipit recusandae
-            reiciendis
-            eveniet iure.
-          </p>
-        </div>
-      </section>
-
-      <section id="services" class="section">
-        <h2 class="section__title">Послуги</h2>
-        <div class="divider"></div>
-        <div class="section__description">
-          <ul class="services__list">
-            <li class="services__item">Кузовные, рихтовочные и вытяжные работы</li>
-            <li class="services__item">Малярные работы и покраска автомобилей</li>
-            <li class="services__item">Все виды работ по ходовой части авто и микроавтобусов</li>
-            <li class="services__item">Восстановлением безопасности автомобиля (airbag и ремни)</li>
-            <li class="services__item">Прокачка тормозных систем с ABS</li>
-            <li class="services__item">Развал схождение на микроавтобусы и легковые авто</li>
-            <li class="services__item">Замена автомобильных стекол</li>
-            <li class="services__item">Компьютерная диагностика</li>
-            <li class="services__item">Химчистка</li>
-            <li class="services__item">Полировка</li>
-            <li class="services__item">А так же запчасти в наличии и под заказ</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="location" class="section">
-        <h2 class="section__title">Пошук на карті</h2>
-        <div class="divider"></div>
-        <div class="section__description">
-          <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.86789094491!2d32.02900741572762!3d49.430311579347745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14db97692b9eb%3A0x7b59b2488408b51!2z0KHQotCeICLQmtC-0LzQv9GA0L7QvNC40YHRgSI!5e0!3m2!1sen!2sua!4v1670089433705!5m2!1sen!2sua"
-           width="100%" height="650" style="border:0;" allowfullscreen="true" loading="lazy"
-           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </section>
-
-      <section id="reviews" class="section">
-        <h2 class="section__title">Відгуки</h2>
-        <div class="divider"></div>
-        <div class="section__description reviews">
-          <div class="reviews__review review">
-            <img class="review__avatar" src="../assets/reviews/review-avatar-1.png" alt="Review avatar">
-            <span class="review__name">Вано</span>
-            <img class="review__rating" src="../assets/reviews/5-star-rating.png" alt="Rating">
-            <span class="review__date">Менше року тому</span>
-            <p class="review__description">Ремонтировал на СТО "Компромисс" уже три машины, ремонт кузова и покраска.
-              Сроки, цена, качество - всё на уровне!!!</p>
-          </div>
-
-          <div class="reviews__review review">
-            <img class="review__avatar" src="../assets/reviews/review-avatar-2.png" alt="Review avatar">
-            <span class="review__name">Алексей Белик</span>
-            <img class="review__rating" src="../assets/reviews/5-star-rating.png" alt="Rating">
-            <span class="review__date">Менше року тому</span>
-            <p class="review__description">Отличное СТО с отличными мастерами и таким же отношением!!!Делал у них
-              несколько машин ,очень доволен .Рекомендую</p>
-          </div>
-
-          <div class="reviews__review review">
-            <img class="review__avatar" src="../assets/reviews/review-avatar-3.png" alt="Review avatar">
-            <span class="review__name">Дарина Горшанова</span>
-            <img class="review__rating" src="../assets/reviews/5-star-rating.png" alt="Rating">
-            <span class="review__date">Менше року тому</span>
-            <p class="review__description">Очень крутое СТО , красила машину , все качественно и быстро !</p>
-          </div>
-        </div>
-
-        <div class="review__button">
-          <a target="_blank"
-           href="https://search.google.com/local/reviews?placeid=ChIJ67mSdrlN0UARUYtAiCSbtQc&q=%D0%A1%D0%A2%D0%9E+%22%D0%9A%D0%BE%D0%BC%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%81%22&hl=en&gl=UA">
-            Більше відгуків
-          </a>
-        </div>
-
-
-        <!-- <a target="_blank"
-           href="https://www.google.com/search?q=%D0%BA%D0%BE%D0%BC%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%81+%D1%81%D1%82%D0%BE&oq=%D0%BA%D0%BE%D0%BC%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%81+%D1%81%D1%82%D0%BE&aqs=chrome..69i57j0i15i22i30j0i22i30j0i15i22i30j0i22i30j69i60l2j69i61.5007j0j7&sourceid=chrome&ie=UTF-8#lrd=0x40d14db97692b9eb:0x7b59b2488408b51,3,,,,"
-           class="review__button">Залишити відгук</a> -->
-      </section>
-
-    </div>
-  </main>
-
-  <script src="js/index.js"></script>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>

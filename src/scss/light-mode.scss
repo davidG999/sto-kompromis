@@ -32,10 +32,6 @@ body.light-mode {
         }
       }
 
-      &__preferences.top-bar__item>ul>li:nth-child(2)>a {
-        color: $main-dark-lighter;
-      }
-
       .top-bar__item .top-bar__lang.top-bar__lang_non-active {
         color: $gray;
       }
