@@ -18,20 +18,20 @@
   /* MAIN */
 
   .main {
-    .visit-us {
-      display: block;
+    .route {
 
-      &__wrapper {
-        display: flex;
+      &__item {
+        justify-content: center;
 
-        >div {
-          flex-basis: 100%;
+        &-title {
+          display: none;
         }
       }
 
-      &__address {
-        display: none;
-      }
+    }
+
+    .location {
+      background: $main-dark-lighter;
     }
 
     .reviews .reviews-list {
@@ -61,18 +61,29 @@
 
   /* MAIN */
 
+
   .main {
-    .section__description {
-      padding: 0 35px;
-    }
-
-    .visit-us {
-
-      &__address {
-        display: flex;
+    .section {
+      &__description {
+        padding: 0 35px;
       }
     }
 
+    .route {
+      &__wrapper {
+        display: block;
+      }
+
+      .section__description {
+        padding: 0 150px;
+      }
+
+      .schedule {
+        &__wrapper {
+          border-bottom: 2px solid $black;
+        }
+      }
+    }
   }
 }
 
@@ -90,18 +101,11 @@
       padding: 0 25px;
     }
 
-    .services {
-      &__item>.services__text::before {
-        content: none;
+
+    .route {
+      .section__description {
+        padding: 0 100px;
       }
-    }
-
-    iframe {
-      height: 500px;
-    }
-
-    .visit-us__item {
-      padding: 15px 0;
     }
 
     .reviews {
@@ -124,8 +128,17 @@
   }
 }
 
-@media (max-width: 555px) {
-  /* HEADER */
+@media (max-width: 685px) {
+  /* MAIN */
+
+  .main {
+    .route {
+      .section__description {
+        padding: 0 50px;
+      }
+    }
+  }
+}
 
   .header {
     box-shadow: 0 0 12px $black;
@@ -151,6 +164,9 @@
       }
     }
   }
+}
+
+@media (max-width: 555px) {
 
   /* MAIN */
 
@@ -171,14 +187,6 @@
           font-size: 20px;
         }
       }
-
-      // &:nth-child(odd) {
-      //   background: $main-dark-lighter;
-      // }
-
-      // &:nth-child(even) {
-      //   background: $main-dark;
-      // }
     }
 
     .about-us {
@@ -188,10 +196,6 @@
     }
 
     .location {
-      iframe {
-        height: 400px;
-      }
-
       .section__description {
         padding: 0;
       }
@@ -199,28 +203,19 @@
 
     .services {
       &__item {
-        padding       : 12px 15px;
-        font-weight   : 400;
-        font-weight   : 500;
         letter-spacing: .3px;
         font-size     : 16px;
       }
     }
 
-    .visit-us {
+    .route {
       &__block-title {
         font-size: 25px;
         padding  : 15px 5px;
       }
 
-      &__address {
-        .visit-us__item {
-          justify-content: center;
-        }
-        
-        .visit-us__item-title {
-          display: none;
-        }
+      .section__description {
+        padding: 0 20px;
       }
     }
 
@@ -245,20 +240,40 @@
         }
       }
 
-      &__button {
+      &__more-reviews {
         width: 230px;
       }
     }
   }
 }
 
-@media (max-width: 420px) {
+
+@media (max-width: 530px) {
   /* HEADER */
 
   .top-bar__phone-number {
     display: none;
   }
 
+  /* MAIN */
+  .main {
+    .about-us .about-us__description {
+      .about-us__text {
+        margin: 0 0 20px 0;
+      }
+
+      .about-us__contacts {
+        display: block;
+      }
+
+      .about-us__divider {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
   /* MAIN CONTENT */
 
   .main {
@@ -268,28 +283,52 @@
         padding  : 0 10px;
         margin   : 0 0 20px 0;
       }
-
-      .about-us__contacts {
-        display  : block;
-        font-size: 18px;
-      }
-
-      .about-us__divider {
-        display: block;
-      }
     }
 
-    .visit-us__item-content--link {
-      font-size: 17px;
+    .route {
+      &__item {
+        padding: 20px 0;
+      }
+
+      &__get-directions {
+        width: 250px;
+
+        font-size: 15px;
+      }
+
+      >&__icon {
+        width: 20px;
+      }
+
+      &__map>iframe {
+        height: 300px;
+      }
     }
 
     .reviews {
-      &__button {
-        width: 180px;
+      &__more-reviews {
+        width: 200px;
+      }
+    }
+  }
+}
 
-        >a {
-          font-size: 13px;
-        }
+@media (max-width: 400px) {
+  /* MAIN */
+
+  .main {
+    .route {
+      &__address-link {
+        font-size: 17px;
+      }
+
+      &__get-directions {
+        width    : 240px;
+        font-size: 14px;
+      }
+
+      &__icon {
+        width: 20px;
       }
     }
   }
@@ -303,11 +342,21 @@
         position: relative;
       }
 
-      .lifecell-img {
-        display    : none;
-        // top     : 1px;
-        // left    : -10px;
-        // position: absolute;
+      .lifecell-logo {
+        display: none;
+      }
+    }
+
+    .route {
+      &__address-link {
+        font-size: 16px;
+      }
+    }
+
+    .reviews {
+      &__more-reviews {
+        width    : 180px;
+        font-size: 14px;
       }
     }
   }

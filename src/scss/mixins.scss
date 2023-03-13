@@ -5,7 +5,36 @@
 
   @if $hover {
     &:hover {
-      border-bottom-color: $white;
+      border-bottom-color: $main-white;
     }
+  }
+}
+
+
+@mixin button-styles {
+  width          : 280px;
+  margin         : 0 auto;
+  background     : transparent;
+  border         : none;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  font-size      : 15px;
+  font-weight    : 500;
+  text-transform : uppercase;
+  letter-spacing : .5px;
+  padding        : 13px 0;
+  border-radius  : 3px;
+  box-shadow     : 0 0 5px $red;
+  border         : 1px solid $red;
+  transition     : background .2s, box-shadow .2s;
+
+  &:hover {
+    background: $red;
+    box-shadow: 0 0 10px $red;
+  }
+
+  &:active {
+    transform: scale(.97);
   }
 }

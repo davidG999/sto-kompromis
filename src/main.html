@@ -23,7 +23,7 @@
   <section id="services" class="section services">
     <h2 class="section__title">Послуги</h2>
     <div class="section__divider"></div>
-    <div class="section__description container-lg">
+    <div class="section__description container-md">
       <ul class="services__list">
         <li class="services__item">
           <span class="services__text">Кузовні, рихтувальні та витяжні роботи</span>
@@ -62,53 +62,60 @@
     </div>
   </section>
 
-  <section id="visit-us" class="section visit-us">
-    <h2 class="section__title">Завітайте до нас</h2>
+  <section id="route" class="section route">
+    <h2 class="section__title">Маршрут</h2>
     <div class="section__divider"></div>
-    <div class="section__description visit-us__desciption container-sm">
-      <div class="visit-us__wrapper">
-        <div class="visit-us__address">
-          <h2 class="visit-us__block-title">Адреса</h2>
-          <ul class="visit-us__list">
-            <li class="visit-us__item">
-              <span class="visit-us__item-title">СТО «Компроміс»</span>
-              <a class="visit-us__item-content--link"
+    <div class="section__description container-lg">
+      <div class="route__wrapper">
+
+        <div class="route__address address">
+          <h3 class="route__block-title">Адреса</h3>
+          <ul class="route__list">
+            <li class="route__item">
+              <h4 class="route__item-title">СТО «Компроміс»</h4>
+              <a class="route__address-link"
                href="https://www.google.com/maps/place/%D0%A1%D0%A2%D0%9E+%22%D0%9A%D0%BE%D0%BC%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%81%22/@49.430312,32.031196,17z/data=!4m5!3m4!1s0x0:0x7b59b2488408b51!8m2!3d49.4303116!4d32.0311961?hl=en"
                target="_blank">
                 м. Черкаси, вул. Хоменка 19
               </a>
             </li>
-          </ul>
-        </div>
-        <div class="visit-us__schedule">
-          <h2 class="visit-us__block-title">Графік роботи</h2>
-          <ul class="visit-us__list">
-            <li class="visit-us__item">
-              <span class="visit-us__item-title">Пн-Пт</span>
-              <span class="visit-us__item-content">9:00-18:00</span>
-            </li>
-            <li class="visit-us__item">
-              <span class="visit-us__item-title">Субота</span>
-              <span class="visit-us__item-content">10:00-17:00</span>
-            </li>
-            <li class="visit-us__item">
-              <span class="visit-us__item-title">Неділя</span>
-              <span class="visit-us__item-content">Вихідний</span>
+            <li class="route__item">
+              <a class="route__get-directions" href="https://goo.gl/maps/ioKMCqjWHvW5eAuv5" target="_blank">
+                Прокласти маршрут
+                <img src="assets/route/directions.svg" class="route__icon" alt="Маршрут">
+              </a>
             </li>
           </ul>
+          <div class="route__schedule schedule">
+            <div class="schedule__wrapper">
+              <h3 class="route__block-title">Графік роботи</h3>
+              <ul class="schedule__list">
+                <li class="schedule__item">
+                  <span class="schedule__item-title">Пн-Пт</span>
+                  <span class="schedule__item-content">9:00-18:00</span>
+                </li>
+                <li class="schedule__item">
+                  <span class="schedule__item-title">Субота</span>
+                  <span class="schedule__item-content">10:00-17:00</span>
+                </li>
+                <li class="schedule__item">
+                  <span class="schedule__item-title">Неділя</span>
+                  <span class="schedule__item-content">Вихідний</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="location" class="section location">
-    <h2 class="section__title">Пошук на карті</h2>
-    <div class="section__divider"></div>
-    <div class="section__description container-lg">
-      <iframe
-       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.86789094491!2d32.02900741572762!3d49.430311579347745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14db97692b9eb%3A0x7b59b2488408b51!2z0KHQotCeICLQmtC-0LzQv9GA0L7QvNC40YHRgSI!5e0!3m2!1sen!2sua!4v1670089433705!5m2!1sen!2sua"
-       style="border:0;" allow="fullscreen" loading="lazy" height="600" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+        <div class="route__map map">
+          <h3 class="route__block-title">Ми на карті</h3>
+          <iframe
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.86789094491!2d32.02900741572762!3d49.430311579347745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14db97692b9eb%3A0x7b59b2488408b51!2z0KHQotCeICLQmtC-0LzQv9GA0L7QvNC40YHRgSI!5e0!3m2!1sen!2sua!4v1670089433705!5m2!1sen!2sua"
+           style="border:0;" allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -149,11 +156,9 @@
       </div>
     </div>
 
-    <div class="reviews__button">
-      <a target="_blank"
-       href="https://search.google.com/local/reviews?placeid=ChIJ67mSdrlN0UARUYtAiCSbtQc&q=%D0%A1%D0%A2%D0%9E+%22%D0%9A%D0%BE%D0%BC%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%81%22&hl=en&gl=UA">
-        Більше відгуків
-      </a>
-    </div>
+    <a class="reviews__more-reviews" target="_blank"
+     href="https://search.google.com/local/reviews?placeid=ChIJ67mSdrlN0UARUYtAiCSbtQc&q=%D0%A1%D0%A2%D0%9E+%22%D0%9A%D0%BE%D0%BC%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%81%22&hl=en&gl=UA">
+      Більше відгуків
+    </a>
   </section>
 </main>

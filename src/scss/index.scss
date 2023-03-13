@@ -3,9 +3,8 @@
 @import "mixins.scss";
 
 body {
-  color      : $white;
+  color      : $main-white;
   font-family: "Rubik", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background : $main-dark;
 
   ul {
     list-style-type: none;
