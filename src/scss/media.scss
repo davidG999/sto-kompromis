@@ -81,6 +81,10 @@
         display: block;
       }
 
+      &__address::after {
+        content: none;
+      }
+
       .section__description {
         padding: 0 150px;
       }
@@ -186,8 +190,26 @@
 
   /* MAIN */
 
+  body.light-mode {
+    .section {
+
+      .services__list,
+      .route__wrapper,
+      .reviews-list .review {
+        box-shadow: 0 0 10px $main-white;
+      }
+    }
+  }
+
   .main {
     .section {
+
+      .services__list,
+      .route__wrapper,
+      .reviews-list .review {
+        box-shadow: 0 0 10px $black;
+      }
+
       &__divider {
         display: none;
       }
@@ -308,8 +330,7 @@
       }
 
       &__get-directions {
-        width: 250px;
-
+        width    : 250px;
         font-size: 15px;
       }
 
@@ -352,21 +373,60 @@
 }
 
 @media (max-width: 335px) {
+  /* HEADER */
+
+  .top-bar__logo>a>img {
+    width : 125px;
+    height: 50px;
+  }
+
+  /* MAIN */
   .main {
-    .about-us .section__description {
-      .about-us__contacts div {
-        display : block;
-        position: relative;
+    .section__description {
+      padding: 0 10px;
+    }
+
+    .about-us {
+      .section__description .about-us__text {
+        font-size: 17px;
       }
 
-      .lifecell-logo {
-        display: none;
+      &__contacts {
+        >span {
+          font-size: 17px;
+        }
+
+        >div {
+
+          .lifecell-logo,
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .services {
+      &__item {
+        padding: 13px 20px;
       }
     }
 
     .route {
-      &__address-link {
+      .section__description {
+        padding: 0 10px;
+      }
+
+      &__list {
+        margin: 0 15px;
+      }
+
+      &__item .route__address-link {
         font-size: 16px;
+      }
+
+      .schedule__list {
+        width: 100%;
       }
     }
 

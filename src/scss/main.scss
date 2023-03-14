@@ -127,10 +127,11 @@
 
   .route {
     &__wrapper {
-      display   : flex;
-      flex-wrap : wrap;
-      border    : 2px solid $black;
-      box-shadow: 0 0 20px $black;
+      display         : flex;
+      flex-wrap       : wrap;
+      border          : 2px solid $black;
+      // border-bottom: none;
+      box-shadow      : 0 0 20px $black;
 
       >div {
         flex-basis: 50%;
@@ -197,10 +198,7 @@
 
     &__get-directions {
       @include button-styles;
-      margin    : 0 auto;
-      width     : 280px;
-      transition: .2s;
-      font-size : 16px;
+      font-size: 16px;
 
       >img {
         margin-left: 10px;
@@ -209,8 +207,9 @@
     }
 
     iframe {
-      height: 401px;
-      width : 100%;
+      display: block;
+      height : 401px;
+      width  : 100%;
     }
   }
 
@@ -320,8 +319,6 @@
     }
 
     &__more-reviews {
-      transition: .2s;
-
       @include button-styles;
     }
   }

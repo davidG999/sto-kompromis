@@ -104,10 +104,6 @@ body.light-mode {
         }
       }
 
-      &__get-directions:hover {
-        color: $main-white-light-mode;
-      }
-
       &__block-title {
         background   : $main-white-light-mode;
         border-bottom: 2px solid $lightgray;
@@ -125,12 +121,6 @@ body.light-mode {
 
       &__address-link {
         @include link-styles-light-mode;
-      }
-
-      &__get-directions {
-        .route__icon {
-          filter: invert(1);
-        }
       }
 
       .schedule {
@@ -170,11 +160,6 @@ body.light-mode {
         &__date {
           color: $lightgray;
         }
-      }
-
-      &__more-reviews:hover {
-        transition: color .2s;
-        color     : $main-white-light-mode;
       }
     }
   }
