@@ -34,6 +34,11 @@ function html() {
     .pipe(connect.reload());
 }
 
+function robots() {
+  return src('src/robots.txt')
+    .pipe(dest('dist'))
+}
+
 function normalize() {
   return src('vendor/normalize/normalize.css')
     .pipe(dest('dist/css'));
@@ -79,7 +84,7 @@ function server() {
 }
 
 /* see npm scripts in package.json */
-exports.default = series(clean, parallel(html, normalize, css, img, js, watchFiles, server));
-exports.build = series(clean, parallel(html, normalize, css, img, js));
+exports.default = series(clean, parallel(html, robots, normalize, css, img, js, watchFiles, server));
+exports.build = series(clean, parallel(html, robots, normalize, css, img, js));
 exports.clean = clean;
-exports.serve = series(clean, parallel(html, normalize, css, img, js), server);
+exports.serve = series(clean, parallel(html, robots, normalize, css, img, js), server);
