@@ -1,6 +1,4 @@
 @media (max-width: 1199px) {
-  /* HEADER */
-
   .top-bar__item-divider:nth-child(3) {
     display: none;
   }
@@ -9,11 +7,8 @@
     display: none;
   }
 
-  /* MAIN */
-
   .main {
     .route {
-
       &__item {
         justify-content: center;
 
@@ -21,7 +16,6 @@
           display: none;
         }
       }
-
     }
 
     .location {
@@ -43,8 +37,6 @@
 }
 
 @media (max-width: 940px) {
-  /* HEADER */
-
   .top-bar__item-divider {
     display: none;
   }
@@ -52,8 +44,6 @@
   .top-bar__address {
     display: none;
   }
-
-  /* MAIN */
 
   body.light-mode {
     .main {
@@ -99,8 +89,6 @@
 }
 
 @media (max-width: 768px) {
-  /* HEADER */
-
   body.light-mode {
     .header {
       box-shadow: 0 0 10px #aaa;
@@ -108,7 +96,7 @@
   }
 
   .header {
-    position  : relative;
+    position: relative;
     box-shadow: 0 0 10px $black;
 
     &__nav {
@@ -116,13 +104,10 @@
     }
   }
 
-  /* MAIN */
-
   .main {
     .section__description {
       padding: 0 25px;
     }
-
 
     .route {
       .section__description {
@@ -143,16 +128,12 @@
     }
   }
 
-  /* FOOTER */
-
   .footer {
     display: flex;
   }
 }
 
 @media (max-width: 685px) {
-  /* MAIN */
-
   .main {
     .route {
       .section__description {
@@ -179,7 +160,7 @@
         }
       }
 
-      &__item-description>span {
+      &__item-description > span {
         display: none;
       }
     }
@@ -187,12 +168,8 @@
 }
 
 @media (max-width: 555px) {
-
-  /* MAIN */
-
   body.light-mode {
     .section {
-
       .services__list,
       .route__wrapper,
       .reviews-list .review {
@@ -203,7 +180,6 @@
 
   .main {
     .section {
-
       .services__list,
       .route__wrapper,
       .reviews-list .review {
@@ -241,16 +217,16 @@
 
     .services {
       &__item {
-        letter-spacing: .3px;
-        font-size     : 16px;
-        padding       : 15px 30px;
+        letter-spacing: 0.3px;
+        font-size: 16px;
+        padding: 15px 30px;
       }
     }
 
     .route {
       &__block-title {
         font-size: 25px;
-        padding  : 15px 5px;
+        padding: 15px 5px;
       }
 
       .section__description {
@@ -270,7 +246,7 @@
           }
 
           &__rating {
-            width: 70px;
+            font-size: 18px;
           }
 
           &__content {
@@ -286,15 +262,11 @@
   }
 }
 
-
 @media (max-width: 530px) {
-  /* HEADER */
-
   .top-bar__phone-number {
     display: none;
   }
 
-  /* MAIN */
   .main {
     .about-us .about-us__description {
       .about-us__text {
@@ -313,14 +285,12 @@
 }
 
 @media (max-width: 460px) {
-  /* MAIN CONTENT */
-
   .main {
     .about-us .about-us__description {
       .about-us__text {
         font-size: 18px;
-        padding  : 0 10px;
-        margin   : 0 0 20px 0;
+        padding: 0 10px;
+        margin: 0 0 20px 0;
       }
     }
 
@@ -330,15 +300,15 @@
       }
 
       &__get-directions {
-        width    : 250px;
+        width: 250px;
         font-size: 15px;
       }
 
-      >&__icon {
+      > &__icon {
         width: 20px;
       }
 
-      &__map>iframe {
+      &__map > iframe {
         height: 300px;
       }
     }
@@ -352,8 +322,6 @@
 }
 
 @media (max-width: 400px) {
-  /* MAIN */
-
   .main {
     .route {
       &__address-link {
@@ -361,7 +329,7 @@
       }
 
       &__get-directions {
-        width    : 240px;
+        width: 240px;
         font-size: 14px;
       }
 
@@ -373,14 +341,11 @@
 }
 
 @media (max-width: 335px) {
-  /* HEADER */
-
-  .top-bar__logo>a>img {
-    width : 125px;
+  .top-bar__logo > a > img {
+    width: 125px;
     height: 50px;
   }
 
-  /* MAIN */
   .main {
     .section__description {
       padding: 0 10px;
@@ -392,12 +357,11 @@
       }
 
       &__contacts {
-        >span {
+        > span {
           font-size: 17px;
         }
 
-        >div {
-
+        > div {
           .lifecell-logo,
           span {
             display: none;
@@ -432,7 +396,7 @@
 
     .reviews {
       &__more-reviews {
-        width    : 180px;
+        width: 180px;
         font-size: 14px;
       }
     }

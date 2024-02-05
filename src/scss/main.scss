@@ -1,6 +1,8 @@
+@import "./variables.scss";
+
 .main {
   .section {
-    width  : 100%;
+    width: 100%;
     padding: 30px 0 40px;
 
     &:nth-child(odd) {
@@ -12,26 +14,26 @@
     }
 
     &__title {
-      font-size     : 50px;
-      text-align    : center;
+      font-size: 50px;
+      text-align: center;
       text-transform: uppercase;
-      margin        : 0 0 20px 0;
-      padding       : 0 40px;
+      margin: 0 0 20px 0;
+      padding: 0 40px;
     }
 
     &__description {
-      margin : 0 auto;
+      margin: 0 auto;
       padding: 0 50px;
 
       .about-us__divider,
       .about-us__contacts {
         display: none;
 
-        >div a {
+        > div a {
           @include link-styles(false);
         }
 
-        >span {
+        > span {
           font-weight: 700;
         }
       }
@@ -39,77 +41,73 @@
 
     &__divider,
     .about-us__divider {
-      width        : 70px;
-      background   : $red;
-      height       : 3px;
-      margin       : 0 auto 30px;
+      width: 70px;
+      background: $red;
+      height: 3px;
+      margin: 0 auto 30px;
       border-radius: 3px;
     }
 
     .about-us__divider {
-      width     : 45px;
+      width: 45px;
       background: $gray;
-      margin    : 0 auto 15px;
+      margin: 0 auto 15px;
     }
   }
-
-  /* ABOUT US */
 
   .about-us {
     &__description {
       text-align: center;
-      font-size : 24px;
+      font-size: 24px;
       text-align: center;
     }
 
     &__text {
-      margin : 0 auto;
+      margin: 0 auto;
       padding: 0 40px;
     }
 
     &__contacts div {
-      display        : flex;
+      display: flex;
       justify-content: center;
-      gap            : 5px;
-      font-size      : 18px;
+      gap: 5px;
+      font-size: 18px;
 
-      >.lifecell-logo {
+      > .lifecell-logo {
         display: none;
       }
     }
   }
 
-  /* SERVICES */
-
   .services {
     &__list {
-      display       : flex;
+      display: flex;
       flex-direction: column;
-      border        : 2px solid $black;
-      display       : flex;
-      flex-wrap     : wrap;
-      border-radius : 5px;
-      box-shadow    : 0 0 20px $black;
+      border: 2px solid $black;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 5px;
+      box-shadow: 0 0 20px $black;
     }
 
     &__item {
-      text-align    : center;
-      font-size     : 18px;
-      padding       : 20px 30px;
-      font-weight   : 500;
-      letter-spacing: .5px;
+      text-align: center;
+      font-size: 18px;
+      padding: 20px 30px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
 
       &:first-child {
-        border-top-left-radius : 5px;
+        border-top-left-radius: 5px;
         border-top-right-radius: 5px;
       }
 
       &:last-child {
-        border-bottom-left-radius : 5px;
+        border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
       }
 
-      >.services__text {
+      > .services__text {
         position: relative;
       }
 
@@ -123,59 +121,56 @@
     }
   }
 
-  /* ROUTE */
-
   .route {
     &__wrapper {
-      display         : flex;
-      flex-wrap       : wrap;
-      border          : 2px solid $black;
-      // border-bottom: none;
-      box-shadow      : 0 0 20px $black;
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid $black;
+      box-shadow: 0 0 20px $black;
 
-      >div {
+      > div {
         flex-basis: 50%;
       }
     }
 
     &__address {
-      display       : flex;
+      display: flex;
       flex-direction: column;
-      position      : relative;
+      position: relative;
 
       &::after {
-        content         : "";
-        position        : absolute;
-        top             : 0;
-        right           : 0;
-        bottom          : 0;
-        width           : 2px;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 2px;
         background-color: $black;
       }
     }
 
     &__block-title {
-      text-align   : center;
-      font-size    : 28px;
+      text-align: center;
+      font-size: 28px;
       margin-bottom: 20px;
-      background   : $main-dark-lighter;
-      margin       : 0;
-      padding      : 15px;
+      background: $main-dark-lighter;
+      margin: 0;
+      padding: 15px;
       border-bottom: 2px solid $black;
     }
 
     &__list {
-      display       : flex;
+      display: flex;
       flex-direction: column;
-      margin        : 0 20px;
+      margin: 0 20px;
     }
 
     &__item {
-      display        : flex;
+      display: flex;
       justify-content: space-between;
-      align-items    : center;
-      font-size      : 18px;
-      padding        : 20px;
+      align-items: center;
+      font-size: 18px;
+      padding: 20px;
 
       &:not(:last-child) {
         border-bottom: 1px solid $black;
@@ -186,8 +181,8 @@
       }
 
       &-title {
-        margin     : 0;
-        color      : $lightgray;
+        margin: 0;
+        color: $lightgray;
         font-weight: 500;
       }
     }
@@ -200,55 +195,53 @@
       @include button-styles;
       font-size: 16px;
 
-      >img {
+      > img {
         margin-left: 10px;
-        width      : 22px;
+        width: 22px;
       }
     }
 
     iframe {
       display: block;
-      height : 401px;
-      width  : 100%;
+      height: 401px;
+      width: 100%;
     }
   }
 
-  /* SCHEDULE */
-
   .schedule {
     &__wrapper {
-      display       : flex;
+      display: flex;
       flex-direction: column;
-      border-top    : 2px solid $black;
+      border-top: 2px solid $black;
     }
 
     &__list {
-      display       : flex;
+      display: flex;
       flex-direction: column;
-      width         : 90%;
-      margin        : 0 auto;
+      width: 90%;
+      margin: 0 auto;
     }
 
     &__item {
-      display        : flex;
+      display: flex;
       justify-content: space-between;
-      align-items    : center;
-      font-size      : 18px;
-      padding        : 20px;
+      align-items: center;
+      font-size: 18px;
+      padding: 20px;
 
       &:not(:last-child) {
         border-bottom: 1px solid $black;
       }
 
       &-title {
-        color      : $lightgray;
+        color: $lightgray;
         font-weight: 500;
       }
 
       &-content {
         &--link {
-          display        : inline-block;
-          font-size      : 18px;
+          display: inline-block;
+          font-size: 18px;
           text-decoration: none;
           @include link-styles;
         }
@@ -256,64 +249,63 @@
     }
   }
 
-  /* REVIEWS */
-
   .reviews {
-    display       : flex;
+    display: flex;
     flex-direction: column;
 
     .reviews-list {
-      display      : flex;
-      gap          : 50px;
+      display: flex;
+      gap: 50px;
       margin-bottom: 30px;
 
       .review {
-        position      : relative;
-        display       : flex;
+        position: relative;
+        display: flex;
         flex-direction: column;
-        flex-basis    : 33.33%;
-        align-items   : center;
-        padding       : 15px 25px 32px;
-        letter-spacing: .3px;
-        line-height   : 20px;
-        box-shadow    : 0 0 20px $black;
-        text-align    : center;
-        border-radius : 5px;
-        background    : transparent;
-        border        : 1px solid $black;
+        flex-basis: 33.33%;
+        align-items: center;
+        padding: 15px 25px 32px;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+        box-shadow: 0 0 20px $black;
+        text-align: center;
+        border-radius: 5px;
+        background: transparent;
+        border: 1px solid $black;
 
         &__avatar {
-          margin       : 0 auto;
-          width        : 40px;
+          margin: 0 auto;
+          width: 40px;
           margin-bottom: 8px;
         }
 
         &__name {
-          margin       : 0 auto;
-          font-size    : 20px;
-          color        : $lightgray;
+          margin: 0 auto;
+          font-size: 20px;
+          color: $lightgray;
           margin-bottom: 8px;
-          text-align   : center;
+          text-align: center;
         }
 
         &__rating {
-          margin       : 0 auto;
-          width        : 80px;
+          font-size: 20px;
+          color: $yellow;
+          margin: 0 auto;
           margin-bottom: 10px;
         }
 
         &__content {
-          margin   : 0 auto;
+          margin: 0 auto;
           font-size: 18px;
         }
 
         &__date {
-          position     : absolute;
-          font-size    : 14px;
-          text-align   : center;
+          position: absolute;
+          font-size: 14px;
+          text-align: center;
           margin-bottom: 5px;
-          bottom       : 0px;
-          color        : $gray;
+          bottom: 0px;
+          color: $gray;
         }
       }
     }

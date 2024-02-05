@@ -16,8 +16,6 @@ if (mode) {
   body.classList.add(`${mode}-mode`)
 }
 
-/* LISTENERS */
-
 window.addEventListener('load', () => {
   copyIcon.style.display = 'inline-block'
   for (let i = 0; i < lifecellLogos.length; i++) {
@@ -30,8 +28,6 @@ copyIcon.addEventListener('keypress', e => {
   if (e.key === 'Enter') copyNumber()
 })
 modeSection.addEventListener('click', onModeSectionClick)
-
-/* FUNCTIONS */
 
 function copyNumber() {
   navigator.clipboard.writeText(PHONE_NUMBER)

@@ -8,8 +8,6 @@ a {
   z-index   : 10;
   background: $main-dark-lighter;
 
-  /* TOP BAR */
-
   .top-bar {
     font-size      : 13px;
     display        : flex;
@@ -201,8 +199,6 @@ a {
       margin-top: 5px;
     }
   }
-
-  /* NAVITAION */
 
   &__nav {
     box-shadow: 0 0 5px $black;

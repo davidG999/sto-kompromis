@@ -1,32 +1,32 @@
 .footer {
   background: $main-dark;
-  margin    : 0 auto;
+  margin: 0 auto;
   box-shadow: 0 0 10px $black;
 
   &__wrapper {
-    display  : flex;
+    display: flex;
     flex-wrap: wrap;
-    padding  : 20px 20px;
+    padding: 20px 20px;
   }
 
   &-section {
     padding: 0 20px;
-    margin : 20px 20px 30px 0;
+    margin: 20px 20px 30px 0;
   }
 
   &__heading {
-    color    : $lightgray;
+    color: $lightgray;
     font-size: 20px;
-    margin   : 0 0 25px 0;
+    margin: 0 0 25px 0;
   }
 
   &__item {
-    display        : flex;
+    display: flex;
     justify-content: space-between;
-    color          : $main-white;
-    margin-bottom  : 15px;
+    color: $main-white;
+    margin-bottom: 15px;
 
-    >span {
+    > span {
       gap: 3px;
 
       &:last-child {
@@ -37,10 +37,10 @@
 
   &__langs {
     .footer__lang {
-      color      : $red;
+      color: $red;
       font-weight: 700;
-      display    : inline-block;
-      padding    : 0;
+      display: inline-block;
+      padding: 0;
 
       &:hover {
         text-decoration: underline;
@@ -59,17 +59,17 @@
 
   &__nav &__link {
     display: flex;
-    gap    : 5px;
+    gap: 5px;
 
-    >img {
+    > img {
       width: 17px;
     }
   }
 
   &__description {
-    display       : flex;
+    display: flex;
     flex-direction: column;
-    flex-wrap     : wrap;
+    flex-wrap: wrap;
   }
 
   &__phone-number {
@@ -83,10 +83,10 @@
   }
 }
 
-.footer__working-hours.footer-section>div>ul>li {
+.footer__working-hours.footer-section > div > ul > li {
   margin-bottom: 7px;
 
-  >span:first-child {
+  > span:first-child {
     margin-right: 10px;
   }
 }
